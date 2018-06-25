@@ -12,15 +12,13 @@ This article provides information on getting started with .NET Core. .NET Core c
 
 If you're unsure what .NET Core is, or how it relates to other .NET technologies, start with the [.NET Core Guide](./). Put simply, .NET Core is an open-source, cross-platform, implementation of .NET.
 
-Download and install the latest [.NET Core SDK](https://www.microsoft.com/net/download/) to get started.
-
 # [Windows](#tab/windows)
 
-This article demonstrates how to quickly create a .NET Core app from the command line. You can also use [Visual Studio 2017](tutorials/with-visual-studio-code.md) or [Visual Studio Code](tutorials/with-visual-studio.md) to create .NET Core app.
+This article demonstrates how to quickly create a .NET Core app from the command line. You can also use [Visual Studio 2017](tutorials/with-visual-studio.md) or [Visual Studio Code](tutorials/with-visual-studio-code.md) to create .NET Core app.
 
-First, open a command prompt such as **PowerShell** or **cmd.exe**.
+First, download and install the latest [.NET Core SDK](https://www.microsoft.com/net/download/windows) to get started.
 
-Next, create a folder and enter it.
+Next, open a command prompt such as **PowerShell** or **cmd.exe**, and create a folder and enter it.
 
 ```console
 mkdir samplecode
@@ -43,7 +41,69 @@ Hello World!
 
 Congratulations! You've created a simple .NET Core application. This application can be copied and run on any other supported operating system.
 
-## Next steps
+# [Linux](#tab/linux)
+
+This article demonstrates how to quickly create a .NET Core app from the command line. You can also use [Visual Studio Code](tutorials/with-visual-studio-code.md) to create .NET Core app.
+
+First, download and install the latest [.NET Core SDK](https://www.microsoft.com/net/download/linux) to get started.
+
+Next, open a command prompt such as **bash** and create a folder and enter it.
+
+```bash
+mkdir samplecode
+cd samplecode
+```
+
+Use the `dotnet` command to create, build, and run, an application.
+
+```bash
+dotnet new console --language c# --output sample1
+dotnet build sample1
+dotnet run --project sample1
+```
+
+After you run the project, you'll see the following output:
+
+```console
+Hello World!
+```
+
+Congratulations! You've created a simple .NET Core application. This application can be copied and run on any other supported operating system.
+
+# [macOS / OS X](#tab/mac)
+
+This article demonstrates how to quickly create a .NET Core app from the command line. You can also use [Visual Studio Code](tutorials/with-visual-studio-code.md) to create .NET Core app.
+
+First, download and install the latest [.NET Core SDK](https://www.microsoft.com/net/download/macos) to get started. .NET Core is supported on OS X El Capitan (version 10.11) and macOS Sierra (version 10.12).
+
+Next, open a command prompt such as **bash** and create a folder and enter it.
+
+```bash
+mkdir samplecode
+cd samplecode
+```
+
+Use the `dotnet` command to create, build, and run, an application.
+
+```bash
+dotnet new console --language c# --output sample1
+dotnet build sample1
+dotnet run --project sample1
+```
+
+After you run the project, you'll see the following output:
+
+```console
+Hello World!
+```
+
+Congratulations! You've created a simple .NET Core application. This application can be copied and run on any other supported operating system.
+
+***
+
+## Tutorials
+
+# [Windows](#tab/windows)
 
 You can get started developing .NET Core apps by following these step-by-step tutorials.
 
@@ -79,8 +139,6 @@ See the [Prerequisites for Windows development](windows-prerequisites.md) articl
 
 # [Linux](#tab/linux)
 
-Install .NET Core on [Linux](https://www.microsoft.com/net/core#linuxredhat).
-
 You can get started developing .NET Core apps by following these step-by-step tutorials.
 
 * [Getting started with .NET Core using the command-line](tutorials/using-with-xplat-cli.md)  
@@ -92,8 +150,6 @@ This [Channel9](https://channel9.msdn.com) video shows you how to install and us
 See the [Prerequisites for Linux development](linux-prerequisites.md) article for a list of the supported Linux distros and versions.
 
 # [macOS / OS X](#tab/mac)
-
-Install .NET Core for [macOS](https://www.microsoft.com/net/core#macos). .NET Core is supported on OS X El Capitan (version 10.11) and macOS Sierra (version 10.12).
 
 You can get started developing .NET Core apps by following these step-by-step tutorials.
 
